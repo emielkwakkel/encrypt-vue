@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <HomeComponent message="Security, security, security!"/>
+    <HomeComponent message="Getting rates"/>
   </section>
 </template>
 
