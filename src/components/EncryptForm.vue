@@ -1,9 +1,14 @@
 <template>
-  <h1>Encrypt</h1>
-  <input v-model="password" type="password" /><br>
-  <textarea v-model="content" /><br>
-  <button v-if="state === 'encrypt'" @click="encrypt(password, content)">Encrypt</button>
-  <button v-if="state === 'decrypt'" @click="decrypt(password, content)">Decrypt</button>
+  <div class="card">
+    <div class="card-body">
+      <label for="passwordFormControl"/>Password
+      <input id="passwordFormControl" class="form-control" v-model="password" type="password" />
+      <label class="pt-4" for="contentFormControl"/>Content
+      <textarea id="contentFormControl" class="form-control" v-model="content" rows="6" /><br>
+      <button v-if="state === 'encrypt'" class="btn col btn-success btn-primary" type="button" @click="encrypt(password, content)">Encrypt</button>
+      <button v-if="state === 'decrypt'" class="btn col btn-danger btn-primary" type="button" @click="decrypt(password, content)">Decrypt</button>
+    </div>
+  </div>
 </template>
 
 <script>

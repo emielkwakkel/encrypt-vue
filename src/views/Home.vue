@@ -1,5 +1,7 @@
 <template>
-  <HomeComponent message="Security, security, security!"/>
+  <section class="container">
+    <HomeComponent message="Security, security, security!"/>
+  </section>
 </template>
 
 <script>
