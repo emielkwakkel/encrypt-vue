@@ -4,12 +4,12 @@
 </template>
 
 <script>
-const encrypt = {
+const homeMixin = {
   created() {
-    this.hello2();
+    this.init();
   },
   methods: {
-    hello2() {
+    init() {
       console.log('Init home!');
     },
   }
@@ -20,7 +20,7 @@ export default {
   props: {
     message: String
   },
-  mixins: [encrypt],
+  mixins: [homeMixin],
   data() {
     return {
       counter: 1,
